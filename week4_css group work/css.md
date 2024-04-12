@@ -8,6 +8,9 @@
                                 Irish Carribean Beach Getaway
                             </ figcaption >
                         </ figure >'
+- Forms & httpbin
+/ get refers to message being used. Method = get OR can be post
+- Camel casing- capitalizing the first letter of the second word (ex. firstName)
 ---
 # **CSS**
 # What is cascading

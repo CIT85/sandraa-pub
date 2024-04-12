@@ -13,12 +13,16 @@
 <body>
 
     <header>
-        <h1>About Me</h1>
+        <h1>Sourdough!</h1>
 
         <nav aria-label="primary-navigation">
+            <h2>About Sourdough & Me</h2>
             <ul>
                 <li>
                     <a href="#hello">Me</a>
+                </li>
+                <li>
+                    <a href="#club">Sourdough Support Group</a>
                 </li>
                 <li>
                     <a href="#whyClass">Why take HTML?</a>
@@ -26,13 +30,16 @@
                 <li>
                     <a href="#chatGPT">How's ChatGpt?</a>
                 </li>
-
+                <li>
+                    <a href="#output">Output for httpbin</a>
+                </li>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
-                </li>
+
+
             </ul>
         </nav>
     </header>
@@ -44,17 +51,78 @@
             <ul>
                 <li>
                     My name is Sandra and this is my first time taking html or even working with html. It's very
-                    thrilling to see everything come to fruition, kind of like bread!
+                    thrilling to see everything come to fruition, kind of like bread! Speaking of bread. . . lets get
+                    started!
                 </li>
             </ul>
 
             <figure>
-                <img src="../img/singlebreadbasket.jpg" alt="Starter Ingredients" title="Bread Basket." width="400"
-                    height="367" loading="lazy">
+                <img src="../img/singlebreadbasket.jpg" alt="Starter Ingredients" title="Bread Basket." width="200"
+                    height="167" loading="lazy">
                 <figcaption>
-                             Sourdough, the best kind of bread.
+                    Sourdough, the best kind of bread.
                 </figcaption>
             </figure>
+        </article>
+        <hr>
+        <article id="club">
+            <h2> Sourdough Support Group</h2>
+            <p>Feeling overwhelmed? Join the Sourdough Support Group! We are here to rise together in the heat of the
+                kitchen.</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Enter Your Info</legend>
+                    <p>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Sour" autocomplete="on" required
+                            autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Dough" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="sourdoughrocks@bakery.com" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="7148675309"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>About You</legend>
+                    <p>
+                        <label for="bread">Favorite Form of Sourdough Bread</label>
+                        <select name="bread" id="bread">
+                            <optgroup label="Sweet">
+                                <option value="scones">Scones</option>
+                                <option value="chocolateLoaf">Chocolate Loaf</option>
+                                <option value="muffins">Muffins</option>
+                            </optgroup>
+                            <optgroup label="Savory">
+                                <option value="pizzaCrust">Pizza Crust</option>
+                                <option value="bagels">Bagels</option>
+                                <option value="plainLoaf" selected>Plain Loaf</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>What concerns do you have working with sourdough??</p>
+                    <label for="message">Your concerns:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="55" rows="15"
+                        placeholder="Doughn't keep your concerns to yourself! Type them here and share..."></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+
+
+
         </article>
         <hr>
         <article id="whyClass">
@@ -70,10 +138,10 @@
 
             <figure>
                 <img src="../img/compinlib.jpg" alt="Computer with Jargon" title="Computer with html on screen."
-                    width="400" height="367" loading="lazy">
+                    width="300" height="267" loading="lazy">
                 <figcaption>
-                             What HTML feels like sometimes.
-                         </figcaption>
+                    What HTML feels like sometimes.
+                </figcaption>
             </figure>
         </article>
         <hr>
@@ -91,14 +159,33 @@
 
 
             <figure>
-                <img src="../img/chatrobot.jpg" alt="Robot" title="Robot in a library setting." width="400" height="367"
+                <img src="../img/chatrobot.jpg" alt="Robot" title="Robot in a library setting." width="300" height="267"
                     loading="lazy">
                 <figcaption>
-                             The charming chatGPT, in person!
-                         </figcaption>
+                    The charming chatGPT, in person!
+                </figcaption>
             </figure>
         </article>
     </main>
+    <hr>
+    <article id="output">
+        <h2><strong>Output for httpbin</strong></h2>
+        <ul>
+            <li> Httpbin tests the form's input information and delivers the output in a simple ordered list. It puts
+                everything into perspective, both form and server information. Though both are displayed httpbin output
+                reflects what information was entered in the form at the top. The output feedback gives a visual of the
+                information which can be reviewed and then revised in the code.
+            </li>
+        </ul>
+
+        <!--  <figure>
+            <img src="../img/compinlib.jpg" alt="Computer with Jargon" title="Computer with html on screen."
+                width="300" height="267" loading="lazy">
+            <figcaption>
+                What HTML feels like sometimes.
+            </figcaption>
+        </figure> -->
+    </article>
     <!--X <header> 
         <h1></h1>
         <nav aria-label="primary-navigation">
