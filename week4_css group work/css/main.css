@@ -1,0 +1,84 @@
+html {
+    font-size: 22px;
+}
+
+body{
+    background-color:#1A090D;
+    color:#F2F4F3;
+}
+
+a   {
+    color: #F2F4F3;
+}
+
+a:visited {
+    color: #DC93A2;
+}
+
+a:hover, a:active {
+    color: #C8E74B;
+}
+
+/* table, tr, td, th, caption {
+    border: 4px solid rgba(58, 229, 52, 0.512);
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+   
+ width: 20%; 
+    
+} */
+
+table, tr, td, th, caption  {
+    border-collapse: collapse;
+    
+    padding: 0.8rem;
+   }
+   
+   th, td {
+    border: 2px solid #FFEFD5;
+    text-align: left;
+   }
+   th {
+    background-color: #5E503F;
+    color: #F2F4F3;
+}
+   tr:nth-child(even) {
+       background-color:#BDB76B;
+
+      }
+     /*  table {
+        border-collapse: collapse;
+        padding: 2rem;
+       }
+       
+       th, td {
+        border: 2px solid #FFEFD5;
+        text-align: left;
+       }
+      
+       tr:nth-child(even) {
+           background-color: #BDB76B;
+            th {
+       background: color #5E503F;
+       color:#F2F4F3;
+   }
+       } */
+
+       h1 {
+        border: 2px dashed #FFEFD5;
+        margin: 1.5rem;
+        width: 225px;
+        padding: 0.5rem;
+       }
+
+       /* specificity: 1
+       This ruleset has secificity for <h1> overriding the default settings. */
+
+       h2 {
+        border: 2px dashed #BDB76B;
+        width: 500px;
+        padding: 0.5rem;
+       }
+
+       
