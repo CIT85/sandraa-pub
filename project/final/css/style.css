@@ -1,0 +1,288 @@
+html {
+    font-size: 25px;
+}
+
+body{
+    background-color:#22333B;
+    color:#EAE0D5;
+}
+
+a   {
+    color: #B6D8E6;
+}
+
+a:visited {
+    color: #488B49;
+}
+
+a:hover, a:active {
+    color: #7C935B;
+}
+
+/* Color palette has been implemented to the pages, text color, and table. Different colors have been added to differnetaiate the status of the link. */
+
+header{
+    /* display: flex; */
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 0.75rem;
+    background-color: #22333B;
+    color: #EAE0D5;
+    font-size: larger;
+  }
+
+  
+  nav ul {
+    justify-content: space-between; 
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 0;
+  }
+
+/* The list within the header was aligned with flexbox and the bullet points removed */
+
+img {
+    border-radius: 15%;
+}/* Images have been rounded to appear softer */
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Table was aligned to center; center applied in html */
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-position: inside;
+  }
+  
+
+  .menu-ul {
+    display: flex;
+  justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    /* list-style-position: inside; */
+    list-style-type: none;
+  }
+
+  li {
+    text-align: left;    
+    /* gap: 1rem; */
+  }
+
+  .top-list {
+    list-style-position: inside;
+    /* text-align: left; */
+    justify-content: left;
+    
+  }
+ .sub-list {
+    text-align: center;
+    list-style-position: inside;
+    padding: 20px;
+    list-style-type: circle;
+  }
+
+  /* display: none;
+   position: absolute;*/
+   /*  top: 100%; */
+  /*  text-align: center; */
+    
+   /* left: 0; */
+   /* padding-left: 70px; */
+   /*list-style-type: none;
+     background-color: #f9f9f9;
+     min-width: 160px; 
+     justify-content: center; */
+ /*  .indented-list li {
+ display: inline-block;
+    text-align: left;
+    list-style-position: inside;
+  } */
+/* tried to do and a tabbed second line as columns but then revised the idea to a row with parentheses for the subpages. Repursposed class for some list styling */
+
+table, tr, td, th, caption  {
+    border-collapse: collapse;
+    
+    padding: 0.8rem;
+   }
+   
+   th, td {
+    border: 3px solid #5E503F;
+    text-align: left;
+   }
+   th {
+    background-color: #488B49;
+    color: #EAE0D5;
+}
+   tr:nth-child(even) {
+       background-color:#7C935B;
+
+      }
+    /* Table includes a border, background color and alternating color rows (using nth-child to alternate color) */
+
+       h1 {
+        text-align: center;
+        background-color: #7C935B;
+        border: 5px ridge #B6D8E6;
+        border-top-style: dashed;
+        border-bottom-style: dashed;
+        margin: 0;
+        /* width: 100vh; */
+        padding: 0;
+       }
+      
+
+       h2 {
+        text-align: center;
+        background-color: #5E503F;
+        border: 2px ridge #C6AC8F;
+        border-top-style: dashed;
+        border-bottom-style: dashed;
+        margin: 0;
+        height: 10vh;
+        /* width: 600px; */
+        padding: 0.15rem;
+       }
+
+      
+       h3  {
+        text-align: center;
+        border: 10px ridge #C6AC8F;
+        margin: auto;
+        width: 600px;
+        padding: 1rem;
+       }
+       
+    /* Borders applied to headings and text has been centred to look more visually appealing (using margin, height and padding to accomplish a bar for the headings). Background color has been included in order to make sticky look clean when scrolling.*/
+
+    .flex-paragraph {
+        margin-inline: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+/* paragraph content has been aligned and centered using flexbox; flex-paragraph applied in html
+Flex had other content added to implement a word wrap*/
+
+    .image-container {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+/* Images have been centered along with the figcaptions using flexbox; image-container applied in html */
+header, footer{
+    color: #EAE0D5;
+    text-align: center;
+    font-size: 1rem;
+}
+
+h1 {
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    position: sticky;
+    top: 0;
+}
+
+/* ol {
+    margin: 2rem;
+} */
+
+.extra-margin {
+    margin: 2rem;
+}
+
+/* Sticky was applied to the headings to help the reader focus on the content under each of the headings. Sticky gives the reader a visual of what section they are on as they scroll.*/
+    footer {
+        background-color: #488B49;
+        height: 3px;
+    }
+/* Extra small */
+@media screen and (min-width: 100px) and (max-width: 575px) {
+    body { 
+        background-color: #22333B;
+       /*  background-image: radial-gradient(#EAE0D5, #22333B);  */
+       font-size: 10px;
+    }
+    .menu-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Small */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    body { 
+        background-color: #5E503F;
+        font-size: 15px;
+    }
+}
+/* resized the images and fonnt size according to screen size */
+
+/* Medium */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body { 
+        background-color: #7C935B;
+    font-size: 20px;
+    }
+    .menu-ul {
+        flex-direction: row;
+    }
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+/* Large */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body { 
+        background-color: #EAE0D5;
+        color: #22333B;
+        font-size: 30px;
+    }
+    img {
+        max-width: 60%;
+        height: auto;
+    }
+}
+/* changed image sizing according to screen size*/
+/* XL */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    body { 
+        background-color: #488B49;
+        /* background-image: radial-gradient(#EAE0D5, #488B49);  */
+        font-size: 35px;
+    }
+}
+
+/* 2XL */
+@media (min-width: 1400px) {
+    body { 
+        background-color: #22333B;
+        color: #EAE0D5;
+        font-size: 40px;
+    }
+}
+
+/* added media queries to chnage the background and some text color when the width changes, checked with chatgpt and was able to make the font change colors according to sizing but advice for menu for flex-direction yielded no results */
