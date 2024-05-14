@@ -57,3 +57,11 @@
         - I started with this media query but changed it to apply text color and back-ground color changes to reflect the differnet window sizes.
         - Attempted but failed to change the layout of the menu links, they should change from row to column as the page shrinks in display size
         - Went back to edit queries and was able to get the colors working as well as image resizing and text. Menu change from row to column still and issue.
+
+### Final
+- all links have been updated
+    - Contact me link has been added to the Sitemap footer
+    - all page links have been listed in the Sitemap
+- contact me page has been added
+    - site includes a picture and full form
+- all pages have been validated and the HTML5 Outliner has been checked
