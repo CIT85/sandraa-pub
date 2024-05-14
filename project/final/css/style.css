@@ -29,6 +29,7 @@ header{
     background-color: #22333B;
     color: #EAE0D5;
    /*  font-size: 30px; */
+   
   }
 
   
@@ -46,6 +47,11 @@ header{
   }
 
 /* The list within the header was aligned with flexbox and the bullet points removed */
+
+/* .cover {
+    background-image: url('images/scenery.jpg');
+    background-size: cover; 
+} */
 
 img {
     border-radius: 15%;
